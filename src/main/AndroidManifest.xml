@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mind.oceanic.the.synchronicity2" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@string/act_synch_list"
+            android:name=".synch.SynchListActivity"/>
+        <activity
+            android:label="@string/act_export"
+            android:name=".importExport.UploadSynchItem"/>
+        <activity
+    android:label="@string/act_synch_detail"
+    android:name=".synch.MaintainSynchronicityActivity" />
+<activity
+    android:label="@string/act_event_notes"
+    android:name=".event.EventNotesActivity" />
+        <activity
+
+            android:windowSoftInputMode="stateVisible"
+android:name=".synch.UpdateSynchDetailActivity" />
+        <activity
+            android:label="@string/act_event_list"
+            android:name=".event.EventListActivity" />
+<activity
+    android:label="@string/act_match_keywords"
+android:name=".match.MatchKeywordsActivity"
+    />
+        <activity
+            android:name=".note.VerbActivity"
+            />
+        <activity android:name=".importExport.DownloadJSONold"/>
+        <activity android:name=".importExport.DownloadJSON"/>
+        <activity
+            android:name=".note.ThingActivity"
+            />
+        <activity
+            android:name=".note.ContactsActivity"
+            />
+        <activity
+            android:name=".note.CalendarActivity"
+            />
+<!--android:windowSoftInputMode="stateVisible"-->
+        <activity
+            android:label="@string/act_event_detail"
+        android:name=".event.UpdateEventActivity"
+    />
+    </application>
+
+    </manifest>

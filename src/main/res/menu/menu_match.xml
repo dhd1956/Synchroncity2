@@ -1,0 +1,45 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <!--xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">-->
+
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+    </ListView>
+
+    <item
+        android:id="@+id/menu_return"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="@string/menu_return"/>
+
+    <item
+        android:id="@+id/menu_ignore"
+        android:orderInCategory="102"
+        app:showAsAction="never"
+        android:title="@string/menu_ignore"/>
+
+    <item
+        android:id="@+id/menu_ignore_reset"
+        android:orderInCategory="103"
+        app:showAsAction="never"
+        android:title="@string/menu_ignore_reset"/>
+
+    <item
+        android:id="@+id/menu_match"
+        android:orderInCategory="104"
+        app:showAsAction="never"
+        android:title="@string/menu_match"/>
+
+    <item
+        android:id="@+id/menu_pass"
+        android:orderInCategory="108"
+        app:showAsAction="always"
+        android:title="@string/menu_pass"/>
+
+</menu>
